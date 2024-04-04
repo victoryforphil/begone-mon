@@ -1,0 +1,27 @@
+[package]
+name = "begone"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+walkdir = "2"
+log = "0.4.20"
+clap = { version = "4.5.2", features = ["derive"] }
+env_logger = "0.11.3"
+thiserror = "1.0.56"
+simplelog = "0.12.1"
+tracing = {version = "0.1.40", features = ["log"]}
+tracing-tracy = {version = "0.11.0", features = ["enable", "system-tracing", "sampling", "code-transfer", "broadcast","flush-on-exit", "delayed-init", ]}
+tracing-subscriber = "0.3.18"
+serde = { version = "1.0.197", features = ["derive"] }
+toml = "0.8.12"
+inquire = "0.7.4"
+[[bin]]
+name = "begone"
+path = "src/bin/begone.rs"
+
+[[bin]]
+name = "make-config"
+path = "src/bin/make-config.rs"
