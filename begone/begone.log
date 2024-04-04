@@ -1,1 +1,15 @@
-00:16:37 [INFO] Starting Wake Client
+04:29:27 [INFO] Starting Begone Client
+04:29:27 [INFO]  Config: BegoneConfig {
+    root_paths: [
+        "../test-data",
+    ],
+    kill_patterns: [
+        "node_modules",
+    ],
+    ignore_patterns: [],
+    dry_run: true,
+    verbose: true,
+    threads: 1,
+    batch_size: 100,
+}
+04:29:27 [INFO] Found 0 results
